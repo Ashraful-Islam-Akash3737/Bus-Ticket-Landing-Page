@@ -1,11 +1,13 @@
 .bgColor{
     background-color: rgb(29, 209, 0) !important;
 }
-.bgColorRed{
-    background-color: rgb(209, 125, 0) !important;
-}
 .seat-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.discount{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }

@@ -19,6 +19,11 @@ function getInnerTextToNumber(elementId) {
     const finalPrice = parseInt(elementText);
     return finalPrice;
 }
+function getValueById(elementId) {
+    const element = document.getElementById(elementId);
+    const elementText = element.value;
+    return elementText;
+}
 function setValueById (elementId, value){
     const element = document.getElementById(elementId);
     const elementText = element.innerText;
