@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- css style -->
+    <link rel="stylesheet" href="styles/styles.css">
     <style>
         .inter {
             font-family: "Inter", sans-serif;
@@ -26,9 +27,9 @@
     </style>
 </head>
 
-<body class="max-w-[1270px]">
+<body class=" mx-auto">
     <!-- header section -->
-    <header class="w-11/12 mx-auto max-w-[1270px] container">
+    <header class="w-11/12 mx-auto  container">
         <!-- nav section -->
         <nav class="flex justify-between items-center mt-6 md:mt-12">
             <h1 class="text-[#030712] raleway font-extrabold text-3xl lg:text-4xl ">P-Ticket</h1>
@@ -52,11 +53,8 @@
             class="mt-8 h-[250px] md:h-[350px] lg:h-[500px] bg-no-repeat bg-cover bg-center  bg-[url('/images/banner.png')] rounded-2xl md:rounded-[18px] lg:rounded-[36px] text-center space-y-5 flex flex-col items-center justify-center mb-20 relative md:pb-20 mx-auto">
             <h1
                 class="text-[#FFFFFF]  font-extrabold text-center text-2xl md:text-4xl lg:text-6xl raleway md:mt-6 lg:mt-10">
-                End-to-End Travel with <br> <span class="text-[#1DD100] "> P Paribahan</span> </h1>
-            <p class="inter font-normal text-sm md:text-[18px] text-[#FFFFFF] w-11/12 md:w-8/12 mx-auto md:mt-4"> Yes,
-                you can
-                run unit tests and view the results directly within the app. The integrated testing features allow for a
-                streamlined .</p>
+                End-to-End Travel with <br> <span class="text-[#1dd100] "> P Paribahan</span> </h1>
+            <p class="inter font-normal text-sm md:text-[18px] text-[#FFFFFF] w-11/12 md:w-8/12 mx-auto md:mt-4">Looking for great deals on bus tickets? We'll make it easy for you! Visit our website or download our App to book your tickets. </p>
             <a href="#p-poribahan" class="scroll-smooth"><button
                 class="text-[#030712] raleway font-bold text-xl lg:text-2xl  lg:px-7 px-4 py-2 lg:py-5 bg-[#11d100] rounded-xl mt-8 scroll-smooth">Bye
                 tickets</button></a>
@@ -177,7 +175,7 @@
                             <button class="flex items-center inter text-xl font-medium  bg-[#e8fae5] p-4 rounded-xl">
                                 <span class=""><img
                                         class="w-[20px] h-[20px] border border-gray-400 border-dashed px-0 py-0"
-                                        src="images/seat-green.png" alt=""></span> <span class="text-[#1dd100] ml-3 ">40
+                                        src="images/seat-green.png" alt=""></span> <span class="text-[#1dd100] ml-3 "><span id="total-available-seat">40</span>
                                     Seats left</span></button>
                         </div>
                     </div>
@@ -213,7 +211,7 @@
                 <div class="flex md:w-2/12 flex-row md:flex-col justify-center items-center md:m-8 md:mr-0">
                     <img class=" border border-gray-400 border-dashed" src="images/fare.png" alt="">
                     <div class="text-center ml-4 md:ml-0">
-                        <h1 class="font-bold raleway text-3xl md:text-2xl lg:text-3xl text-[#030712] my-4">550 Taka</h1>
+                        <h1 class="font-bold raleway text-3xl md:text-2xl lg:text-3xl text-[#030712] my-4"><span id="ticket-price">550</span> Taka</h1>
                         <p class="raleway text-[24px] md:text-sm lg:text-[24px] font-normal text-[#686a71]">Per Seat
                         </p>
                     </div>
@@ -228,13 +226,13 @@
                 <div class="flex-1">
                     <h3 class="raleway font-semibold text-[#030712] text-2xl mb-5">Select Your Seat</h3>
                     <hr class=" border-dashed">
-                    <div class="flex justify-between my-5">
-                        <h3 class="flex items-center inter text-xl font-medium   p-4 rounded-xl">
+                    <div class="flex flex-col md:flex-row justify-center md:justify-between my-5">
+                        <h3 class="flex justify-center items-center inter text-xl font-medium   p-4 rounded-xl">
                             <span class="border border-gray-400 border-dashed px-0 py-0"><img
                                     class="w-[20px] h-[20px]  " src="images/seat-gray.png" alt=""></span> <span
                                 class="text-[#686a71] ml-3 ">Available</span>
                         </h3>
-                        <h3 class="flex items-center inter text-xl font-medium   p-4 rounded-xl">
+                        <h3 class="flex justify-center  items-center inter text-xl font-medium   p-4 rounded-xl">
                             <span class="border border-gray-400 border-dashed px-0 py-0"><img
                                     class="w-[20px] h-[20px]  " src="images/seat-green-filled.png" alt=""></span> <span
                                 class="text-[#1dd100] ml-3 ">Selected</span>
@@ -254,83 +252,83 @@
                         <div class="flex flex-wrap md:flex-nowrap items-center gap-8">
                             <p class="bg-[#FFFFFF]  p-0 rounded-xl">A</p>
 
-                            <p class="bg-[#F7F8F8] text-center w-[110px]  py-4 px-10 rounded-xl">A1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px]  py-4 px-10 rounded-xl">A2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px]  py-4 px-10 ml-8  rounded-xl">A3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px]  py-4 px-10 rounded-xl">A4</p>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px]  py-4 px-10 rounded-xl">A1</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px]  py-4 px-10 rounded-xl">A2</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px]  py-4 px-10 ml-8  rounded-xl">A3</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px]  py-4 px-10 rounded-xl">A4</button>
 
                         </div>
                         <!-- B -->
                         <div class="flex flex-wrap md:flex-nowrap items-center gap-8">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">B</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">B1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">B2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">B3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">B4</p>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">B1</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">B2</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 ml-8 rounded-xl">B3</button>
+                            <button  class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">B4</button>
                         </div>
                         <!-- C -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8 ">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">C</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">C1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">C2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">C3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">C4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">C1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">C2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">C3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">C4</button>
                         </div>
                         <!-- D -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">D</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">D1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">D2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">D3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">D4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">D1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">D2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">D3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">D4</button>
                         </div>
                         <!-- E -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8 ">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">E</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">E1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">E2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">E3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">E4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">E1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">E2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">E3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">E4</button>
                         </div>
                         <!-- F -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8 ">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">F</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">F1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">F2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">F3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">F4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">F1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">F2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">F3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">F4</button>
                         </div>
                         <!-- G -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">G</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">G1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">G2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">G3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">G4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">G1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">G2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">G3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">G4</button>
                         </div>
                         <!-- H -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8 ">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">H</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">H1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">H2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">H3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">H4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">H1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">H2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">H3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">H4</button>
                         </div>
                         <!-- I -->
                         <div class="flex flex-wrap md:flex-nowrap items-center  gap-8">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">I</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">I1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">I2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">I3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">I4</p>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">I1</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">I2</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 ml-8 rounded-xl">I3</button>
+                            <button  class="bg-[#F7F8F8]  seat-notext-center w-[110px] py-4 px-10 rounded-xl">I4</button>
                         </div>
                         <!-- J -->
                         <div class="flex flex-wrap md:flex-nowrap items-center gap-8 ">
                             <p class="bg-[#FFFFFF] p-0 rounded-xl">J</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">J1</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">J2</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 ml-8 rounded-xl">J3</p>
-                            <p class="bg-[#F7F8F8] text-center w-[110px] py-4 px-10 rounded-xl">J4</p>
+                            <button   class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">J1</button>
+                            <button   class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">J2</button>
+                            <button   class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 ml-8 rounded-xl">J3</button>
+                            <button   class="bg-[#F7F8F8] seat-no text-center w-[110px] py-4 px-10 rounded-xl">J4</button>
                         </div>
                     </div>
 
@@ -346,27 +344,30 @@
                     <!-- total cost -->
                     <div class="mt-6 bg-[#F7F8F8] p-2 md:p-8 rounded-xl">
                         <div class="flex justify-between items-center  mb-4">
-                            <p class="inter text-[16px] font-medium text-[#030712]">Seat <span id="total-seat"
+                            <p class="inter text-[16px] font-medium text-[#030712]">Seat <span id="total-selected-seat"
                                     class="py-0 px-2 bg-[#1DD100] text-[#FFFFFF] rounded-md">0</span> </p>
                             <p class="inter text-[16px] font-medium text-[#030712]">Class</p>
                             <p class="inter text-[16px] font-medium text-[#030712]">Price</p>
                         </div>
                         <hr class=" border-dashed mb-4">
+                        <div id="select-seat-details" class="flex flex-col mb-4">
+
+                        </div>
                         <hr class="my-4">
                         <!-- total price -->
                         <div class="flex justify-between items-baseline  mb-4">
                             <p class="inter text-[16px] font-medium text-[#030712]">Total Price</p>
-                            <p class="inter text-[16px] font-medium text-[#030712] mb-4">BDT <span id=""
-                                    class="">1100</span></p>
+                            <p class="inter text-[16px] font-medium text-[#030712] mb-4">BDT <span id="total-price"
+                                    class="">0</span></p>
                         </div>
                         <!-- coupon code -->
                         <div
-                            class="md:bg-[#FFFFFF] bg-none flex flex-col md:flex-row items-center justify-between rounded-xl mb-6 p-2">
+                            class="md:bg-[#FFFFFF] bg-none flex flex-col md:flex-row items-center justify-between rounded-xl mb-6 p-2" id="coupon-section">
                             <input
                                 class="inter text-[14px] font-normal text-[#9a9ca0] p-5 rounded-xl outline-none mb-4 md:mb-0"
-                                type="text" name="" id="" placeholder="have any coupon?">
+                                type="text" name="" id="coupon-input-field" placeholder="have any coupon?">
                             <button
-                                class=" inter font-semibold text-[16px] px-3 py-2  bg-[#11d100] rounded-lg text-[#FFFFFF]">Apply</button>
+                                class=" inter font-semibold text-[16px] px-3 py-2  bg-[#11d100] rounded-lg text-[#FFFFFF] " disabled  id="apply-coupon" onclick="apply()"   >Apply</button>
 
                         </div>
                         <!-- grand total -->
@@ -455,7 +456,7 @@
 
     </footer>
 
-
+    <script src="js/function.js"></script>
     <script src="js/index.js"></script>
 </body>
 
